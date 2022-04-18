@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "./ERC20/ERC20.sol";
 
-contract AstroXP_Governance is ERC20 {
-    constructor(uint256 initialSupply) ERC20("AstroXP", "AXP") {
+contract AstroXP is ERC20 {
+    constructor(uint256 initialSupply) ERC20("Astro XP", "AXP") {
          _mint(msg.sender, initialSupply * (10 ** uint256(decimals()))); 
     }
 }
