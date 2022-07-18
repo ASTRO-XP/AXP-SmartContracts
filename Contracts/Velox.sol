@@ -317,7 +317,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 // File: token/erc20/ERC20GatewayWhitelist.sol
 
-pragma solidity 0.5.17;
+pragma solidity ^0.8.0;
 
 
 contract ERC20GatewayWhitelist is ERC20 {
@@ -360,7 +360,7 @@ contract ERC20GatewayWhitelist is ERC20 {
 
 // File: access/HasAdmin.sol
 
-pragma solidity 0.5.17;
+pragma solidity ^0.8.0;
 
 
 contract HasAdmin {
@@ -393,7 +393,7 @@ contract HasAdmin {
 
 // File: access/HasMinters.sol
 
-pragma solidity 0.5.17;
+pragma solidity ^0.8.0;
 
 
 
@@ -457,7 +457,7 @@ contract HasMinters is HasAdmin {
 
 // File: token/erc20/ERC20Mintable.sol
 
-pragma solidity 0.5.17;
+pragma solidity ^0.8.0;
 
 
 contract ERC20Mintable is HasMinters, ERC20 {
@@ -475,11 +475,7 @@ contract ERC20Mintable is HasMinters, ERC20 {
 
 // File: VELOX.sol
 
-pragma solidity 0.5.17;
-
-
-
-
+pragma solidity ^0.8.0;
 
 contract VELOX is ERC20Detailed, ERC20Mintable, ERC20GatewayWhitelist {
   constructor(address _mainchainGateway)
